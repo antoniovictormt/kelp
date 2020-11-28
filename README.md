@@ -37,8 +37,8 @@ This project was made using the follow technologies:
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :computer: Project
-Happy is a project to register orphanages made with React.js, Node.js and React Native using Typescript during the 3rd edition of Next Level Week given by Rocketseat. It's intended to be a way of bringing happiness and smiles to children of all ages. 
- 
+📋✂️ Kelpf is an online link shortener project, created with React.js, Node.js using Javascript (frontend) and Typescript (backend) during the Semana Web Full Stack JS. 📋✂️  
+
 ## :green_book: How to run
 
 ### Clone Repository
