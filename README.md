@@ -33,7 +33,6 @@ This project was made using the follow technologies:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
-- [Expo](https://expo.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :computer: Project
