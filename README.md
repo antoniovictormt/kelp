@@ -68,7 +68,7 @@ $ npm start
 $ yarn
 # Start development
 $ yarn start
-
+```
 create a .env.production for your REACT_APP_HOST and REACT_APP_API
 
 </details>
