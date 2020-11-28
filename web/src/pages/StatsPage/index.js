@@ -5,10 +5,11 @@ import {
   parseISO,
   formatRelative
 } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
+import enUS from 'date-fns/locale/en-US';
 
 import Header from '../../components/Header';
 import ShortenerService from '../../services/shortenerService';
+import vars from '../../configs/vars';
 
 import {
   StatsBox,
@@ -40,7 +41,7 @@ class StatsPage extends React.Component {
       const currentDate = new Date();
 
       const relativeData = formatRelative(parsedDate, currentDate, {
-        locale: ptBR,
+        locale: enUS,
       });
 
       shortenedURL.relativeData = relativeData;
@@ -52,7 +53,7 @@ class StatsPage extends React.Component {
     } catch (error) {
       this.setState({
         isLoading: false,
-        errorMessage: 'Oops, the requested URL does not exist',
+        errorMessage: 'Oops, the requested url does not exist',
       });
     }
   };
@@ -73,7 +74,7 @@ class StatsPage extends React.Component {
             <StatsContainer className="text-center">
               <p>
                 <b>
-                  https://kelp.tk/{shortenedURL.code}
+                  {vars.HOST_APP + shortenedURL.code};
                 </b>
               </p>
               <p>

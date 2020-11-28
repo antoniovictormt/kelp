@@ -1,8 +1,10 @@
 <p align="center">
-   <img src="" alt="Kelp" width="280"/>
+   <img src="./github/logo.png" alt="Kelp" width="280"/>
 </p>
 
 <p align="center">
+  <a href="#movie_camera-web-preview">Web Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#file_folder-demo-website">Demo Website</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#books-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#green_book-how-to-run">How to Run</a>
@@ -16,14 +18,22 @@
 </p>
 
 <p align="center">
-  <img src="" alt="Kelp" width="100%">
+  <img src="./github/landing.png" alt="Kelp" width="100%">
 </p>
+
+## :movie_camera: Web Preview
+![Happy web preview](.github/kelpf.gif "Happy Web Preview")
+
+## :file_folder: Demo Website
+👉  Demo: You can acess the website at: (http://www.kelpf.tk/)   
 
 ## :books: Technologies
 
 This project was made using the follow technologies:
 
 - [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [Expo](https://expo.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :computer: Project
@@ -32,21 +42,49 @@ This project was made using the follow technologies:
 
 ### Clone Repository
 ```bash
-$ git clone https://github.com/antoniovictormt/kelp.git
+$ git clone https://github.com/antoniovictormt/kelpf.git
 ```
 
-### Run Server Project
-🌐 Entre na pasta [`server/`](server/) e execute os seguintes comandos:
+### Run Web Project
+💻 Enter the folder [`web/`](web/) and run the following commands:
 
 <details>
 <summary><i>com <b>npm</b></i></summary>
 
 ```bash
-# Instalar dependências
+# Install dependencies
 $ npm install
-# Criar banco de dados
+# Start development
+$ npm start
+```
+</details>
+
+<details>
+<summary><i>com <b>yarn</b></i></summary>
+
+```bash
+# Install dependencies
+$ yarn
+# Start development
+$ yarn start
+
+create a .env.production for your REACT_APP_HOST and REACT_APP_API
+
+</details>
+⚠️ Go to http://localhost:3000/ to see the result.
+
+### Run Server Project
+🌐 Enter the folder [`server/`](server/) and run the following commands:
+
+<details>
+<summary><i>com <b>npm</b></i></summary>
+
+```bash
+# Install dependencies
+$ npm install
+# Create database
 $ npm typeorm migration:run
-# Iniciar servidor
+# Start server
 $ npm dev
 ```
 </details>
@@ -55,11 +93,11 @@ $ npm dev
 <summary><i>com <b>yarn</b></i></summary>
 
 ```bash
-# Instalar dependências
+# Install dependencies
 $ yarn
 # Criar banco de dados
 $ yarn typeorm migration:run
-# Iniciar servidor de desenvolvimento
+# Start server
 $ yarn dev
 ```
 </details>

@@ -11,7 +11,7 @@ export default function Header(props) {
     <>
       <HeaderContainter>
         <Logo src={Icone} alt="Kelp - Your Url Shortener" />
-        <h1>Kelp</h1>
+        <h1>Kelpf</h1>
         <p>{props.children}</p>
       </HeaderContainter>
     </>

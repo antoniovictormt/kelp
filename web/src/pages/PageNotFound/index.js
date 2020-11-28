@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { PageNotFoundContainer } from './styles';
 
 class PageNotFound extends React.Component {
   // eslint-disable-next-line no-useless-constructor
@@ -8,9 +9,9 @@ class PageNotFound extends React.Component {
 
   render() {
     return (
-      <p>
+      <PageNotFoundContainer>
         Page Not Found
-      </p>
+      </PageNotFoundContainer>
     )
   }
 }

@@ -11,6 +11,7 @@ import { FiCopy, FiCrop } from 'react-icons/fi';
 
 import Header from '../../components/Header';
 import ShortenerService from '../../services/shortenerService';
+import vars from '../../configs/vars';
 
 import {
   ContentContainer,
@@ -38,7 +39,7 @@ class HomePage extends React.Component {
 
     if (!url) {
       this.setState({
-        isLoading: false, errorMessage: 'Informar uma url para encurtar.'
+        isLoading: false, errorMessage: 'Enter a URL to shorten.'
       });
     } else {
       try {
@@ -47,7 +48,7 @@ class HomePage extends React.Component {
 
         this.setState({ isLoading: false, code: result.code });
       } catch (error) {
-        this.setState({ isLoading: false, errorMessage: 'Ops, ocorreu um erro ao tentar encurtar a url.' });
+        this.setState({ isLoading: false, errorMessage: 'Oops, there was an error trying to shorten the url.' });
       }
     }
   }
@@ -69,7 +70,7 @@ class HomePage extends React.Component {
           <Form onSubmit={this.handleSubmit}>
             <InputGroup className="mb-3">
               <FormControl
-                placeholder="Digite a url para encurtar"
+                placeholder="Enter url to shorten"
                 defaultValue=""
                 onChange={e => this.setState({ url: e.target.value })}
               />
@@ -94,7 +95,7 @@ class HomePage extends React.Component {
                     <InputGroup>
                       <FormControl
                         autoFocus={true}
-                        defaultValue={`https://kelp.tk/${code}`}
+                        defaultValue={vars.HOST_APP + code}
                         ref={(input) => this.inputURL = input}
                       />
                       <InputGroup.Append>
@@ -109,7 +110,11 @@ class HomePage extends React.Component {
                         </Button>
                       </InputGroup.Append>
                     </InputGroup>
-                    <p>Para acompanhar as estatísticas, acesse https://kelp.tk/{code}</p>
+                    <p style={{
+                      marginTop: 16,
+                    }}>
+                      To analyze the statistics, visit: {vars.HOST_APP + code}/stats
+                    </p>
                   </>
                 )
               )}
