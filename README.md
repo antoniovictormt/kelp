@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./github/logo.png" alt="Kelp" width="280"/>
+   <img src="./.github/logo.png" alt="Kelp" width="280"/>
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img src="./github/landing.png" alt="Kelp" width="100%">
+  <img src="./.github/landing.png" alt="Kelp" width="100%">
 </p>
 
 ## :movie_camera: Web Preview
